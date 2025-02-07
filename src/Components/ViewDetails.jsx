@@ -10,7 +10,7 @@ const ViewDetails = () => {
   return (
     <>
       <section className="w-full bg-[#09031B] lg:py-10 lg:pt-0 pt-6 pb-0">
-        <div className="w-11/12 mx-auto flex justify-between items-center gap-4 pt-6">
+        <div className="w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-4 pt-6">
           <div>
             <div className="space-y-6 md:space-y-10 animate-slideInLeft">
               <div className="space-y-4 md:space-y-6">
@@ -464,7 +464,7 @@ const ViewDetails = () => {
                   </div>
                   <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
                     User Authentication: Secure login and registration with
-                    email/password. Social login integration (Google or GitHub).
+                    email/password. Social login integration (Google).
                   </span>
                 </li>
                 <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
@@ -473,9 +473,7 @@ const ViewDetails = () => {
                     <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
                   </div>
                   <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
-                    Campaign Management: Add, update, and delete campaigns
-                    (protected routes). Display detailed campaign information on
-                    a dedicated page.
+                    Manage CRUD operations
                   </span>
                 </li>
                 <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
@@ -484,9 +482,7 @@ const ViewDetails = () => {
                     <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
                   </div>
                   <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
-                    Donation System: Donate to active campaigns with data
-                    persistence. View personal donation history in the 'My
-                    Donations' section.
+                    Search Functionalities, filer functionalities
                   </span>
                 </li>
                 <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
@@ -497,16 +493,6 @@ const ViewDetails = () => {
                   <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
                     Responsive Design: Fully optimized for desktop, tablet, and
                     mobile devices.
-                  </span>
-                </li>
-                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
-                  <div class="relative mt-2">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
-                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
-                  </div>
-                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
-                    Sorting and Filtering: Sort campaigns by minimum donation
-                    amount on the 'All Campaigns' page.
                   </span>
                 </li>
                 <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
@@ -527,6 +513,100 @@ const ViewDetails = () => {
                   <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
                     Dark/Light Mode: Toggle between dark and light themes for
                     better usability.
+                  </span>
+                </li>
+              </ul>
+              <h3 class="text-xl font-semibold text-white/90 flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-star w-5 h-5 text-yellow-400 group-hover:rotate-[20deg] transition-transform duration-300"
+                >
+                  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                </svg>
+                Challenges
+              </h3>
+              <ul className="lis-none spacey-3">
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    Adjust responsibility
+                  </span>
+                </li>
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    CRUD operation
+                  </span>
+                </li>
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    Firebase loading authentication
+                  </span>
+                </li>
+              </ul>
+              <h3 class="text-xl font-semibold text-white/90 flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-star w-5 h-5 text-yellow-400 group-hover:rotate-[20deg] transition-transform duration-300"
+                >
+                  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                </svg>
+                Future plan
+              </h3>
+              <ul>
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    Selling for customer service
+                  </span>
+                </li>
+
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    Content and SEO strategy
+                  </span>
+                </li>
+
+                <li class="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                  <div class="relative mt-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                    <div class="relative w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-125 transition-transform duration-300"></div>
+                  </div>
+                  <span class="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors">
+                    Feature Enhancement
                   </span>
                 </li>
               </ul>

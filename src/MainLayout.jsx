@@ -3,6 +3,8 @@ import Banner from "./Components/Banner";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 const MainLayout = () => {
   return (
@@ -14,6 +16,8 @@ const MainLayout = () => {
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 };

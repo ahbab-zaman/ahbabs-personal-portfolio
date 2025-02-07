@@ -15,7 +15,7 @@ const Projects = () => {
     <>
       <section className="w-full bg-[#09031B] lg:py-10 lg:pt-0 pt-6 pb-0">
         <Title title="Project Showcase"></Title>
-        <div className="w-11/12 mx-auto flex justify-between items-center gap-4">
+        <div className="w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-4">
           {project.map((item) => (
             <Card item={item} key={item.id}></Card>
           ))}
