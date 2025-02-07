@@ -15,6 +15,7 @@ const Contact = () => {
       .then(
         () => {
           toast.success("Successfully Sent!");
+          form.current.reset();
           console.log("SUCCESS!");
         },
         (error) => {
@@ -33,7 +34,10 @@ const Contact = () => {
       >
         <Title title="Contact Me"></Title>
         <div className="lg:w-3/4 w-11/12 mx-auto bg-[#16122c] rounded-xl py-12 space-y-4">
-          <div data-aos="fade-right" className="flex justify-center items-center gap-6">
+          <div
+            data-aos="fade-right"
+            className="flex justify-center items-center gap-6"
+          >
             <h2 className="lg:text-4xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-center capitalize">
               Get in touch
             </h2>
@@ -44,10 +48,7 @@ const Contact = () => {
           </p>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
-            <div
-              data-aos="fade-up"
-              className="relative group w-3/4 mx-auto"
-            >
+            <div data-aos="fade-up" className="relative group w-3/4 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -71,8 +72,11 @@ const Contact = () => {
               />
             </div>
 
-            <div data-aos="fade-up"
-              data-aos-delay="100" className="relative group aos-init  w-3/4 mx-auto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="relative group aos-init  w-3/4 mx-auto"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -96,8 +100,11 @@ const Contact = () => {
               />
             </div>
 
-            <div data-aos="fade-up"
-              data-aos-delay="200" className="relative group aos-init  w-3/4 mx-auto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="relative group aos-init  w-3/4 mx-auto"
+            >
               <img
                 className="lucide lucide-mail absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"
                 src="./telephone (1).png"
