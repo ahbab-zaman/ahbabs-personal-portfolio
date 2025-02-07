@@ -1,0 +1,54 @@
+[
+  {
+    "project_name": "Health Care Medicine Shop",
+    "id": 1,
+    "description": "Health Care is a user-friendly and fully responsive e-commerce-based web application where users can explore a variety of medical equipment, including medicines. The platform offers convenient features for shopping, managing carts, processing payments, and filtering products.",
+    "image": "https://i.ibb.co.com/Zz4cmnLx/Screenshot-52.png",
+    "technologies": [
+      "https://cdn-icons-png.flaticon.com/128/1051/1051277.png",
+      "https://cdn-icons-png.flaticon.com/128/732/732190.png",
+      "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      "https://img.icons8.com/?size=100&id=62452&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000"
+    ],
+    "live_link": "https://health-care-f14b8.firebaseapp.com/",
+    "repo_link": "https://github.com/ahbab-zaman/Health-care-client-side",
+    "challenges": "When I am building this web application, I found lot of troubles. Especially the banner animated image. At last I downloaded the image from freepik.com. It gave me a lot of searching experience during finding the appropriate image. I search many websites in the internet then finally I found it. I face nothing more complicated but the animated image."
+  },
+  {
+    "project_name": "Sports Equipment Web Application",
+    "id": 2,
+    "description": "Sports Gear is a fully responsive and user-friendly e-commerce platform that offers a wide range of sports equipment and gear. Users can explore various sports products, purchase based on recommendations, and interact with other users' queries and feedback.",
+    "image": "https://i.ibb.co.com/SvC5Qwz/cover2.png",
+    "technologies": [
+      "https://cdn-icons-png.flaticon.com/128/1051/1051277.png",
+      "https://cdn-icons-png.flaticon.com/128/732/732190.png",
+      "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      "https://img.icons8.com/?size=100&id=62452&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+    ],
+    "live_link": "https://simple-firebase-2cb6e.firebaseapp.com",
+    "repo_link": "https://github.com/programming-hero-web-course2/b10-a10-client-side-ahbab-zaman",
+    "challenges": "When I am building this web application, I found lot of troubles. Delete and update functionalities gave me headache. At last I overcame the trouble. One of my partner who is also a developer assist me to cope with this situation"
+  },
+  {
+    "project_name": "A Recommendation Platform",
+    "id": 3,
+    "description": "A simple recommendation web application where user can review and add their query. Our application is based on all age ratio people. They can find their desirable products based on the review and comments.",
+    "image": "https://i.ibb.co.com/6b6Kgv0/cover3.png",
+    "technologies": [
+      "https://cdn-icons-png.flaticon.com/128/1051/1051277.png",
+      "https://cdn-icons-png.flaticon.com/128/732/732190.png",
+      "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      "https://img.icons8.com/?size=100&id=62452&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+    ],
+    "live_link": "https://recommendation-platform-1f3cf.web.app",
+    "repo_link": "https://github.com/programming-hero-web-course2/b10a11-client-side-ahbab-zaman",
+    "challenges": "When I am building this web application, I found lot of troubles. The My Recommendation page and jwt token gave a lot pain. I got thousands of error when I coding into the web application. But at last I found peace after making it usable."
+  }
+]

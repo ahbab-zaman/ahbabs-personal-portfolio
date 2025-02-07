@@ -1,6 +1,8 @@
 import Navbar from "./Components/Navbar";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 
 const MainLayout = () => {
   return (
@@ -10,6 +12,8 @@ const MainLayout = () => {
       </div>
       <Banner></Banner>
       <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
     </>
   );
 };
