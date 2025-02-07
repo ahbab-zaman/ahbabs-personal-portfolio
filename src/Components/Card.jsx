@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Card = ({ item }) => {
-  const { project_name, id, description, image } = item;
+const Card = ({ item, animation }) => {
+  const { project_name, id, description, image, live_link } = item;
   return (
-    <div
-      data-aos="fade-up-right"
-      data-aos-duration="1000"
-      className="aos-init aos-animate"
-    >
+    <div data-aos={animation}>
       <div className="group relative w-full">
         <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
@@ -31,7 +27,7 @@ const Card = ({ item }) => {
             </div>
             <div className="pt-4 flex items-center justify-between">
               <Link
-                to="https://health-care-f14b8.firebaseapp.com/https://health-care-f14b8.firebaseapp.com"
+                to={live_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"

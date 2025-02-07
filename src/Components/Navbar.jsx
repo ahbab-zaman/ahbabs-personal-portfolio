@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
@@ -22,24 +20,6 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 30) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // ${
-  //   isScrolled
-  //     ? "bg-[#09031b4c] backdrop-blur-3xl shadow-md"
-  //     : "bg-[#09031B]"
-  // }
-  // }, []);
-
   return (
     <nav
       className={`fixed top-0 left-0 w-full bg-[#09031B] shadow-md p-4 z-50 text-[#6C64F2]`}
@@ -49,27 +29,49 @@ const Navbar = () => {
         <div className="text-xl font-bold ">Ahbab</div>
 
         {/* Large screen nav links */}
-        <div className="hidden md:flex items-center gap-5 font-semibold">
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Contact</Link>
-          <Link>Projects</Link>
+        <ul className="hidden md:flex items-center gap-5 font-semibold">
+          <li className="relative group cursor-pointer">
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            <Link to="skill" smooth={true} duration={500}>
+              Skills
+            </Link>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            <Link to="project" smooth={true} duration={500}>
+              Projects
+            </Link>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+          </li>
           <Link
             to="./resume.pdf"
             target="_blank"
             download
             className="w-full lg:w-auto"
           >
-            <button
-              data-aos="fade-up"
-              data-aos-duration="800"
-              className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init"
-            >
+            <button className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init">
               <FaDownload></FaDownload>
               Resume
             </button>
           </Link>
-        </div>
+        </ul>
 
         {/* Mobile menu icon */}
         <div
@@ -98,27 +100,70 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               />
             </div>
-            <nav className="flex flex-col gap-4">
-              <Link>Home</Link>
-              <Link>About</Link>
-              <Link>Contact</Link>
-              <Link>Projects</Link>
-              <Link
-                to="./resume.pdf"
-                target="_blank"
-                download
-                className="w-full lg:w-auto"
+            <ul className="flex flex-col gap-4 font-semibold">
+              <li
+                data-aos="fade-right"
+                className="relative group cursor-pointer"
               >
-                <button
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init"
+                <Link to="home" smooth={true} duration={500}>
+                  Home
+                </Link>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+              </li>
+              <li
+                data-aos="fade-right"
+                className="relative group cursor-pointer"
+              >
+                <Link to="about" smooth={true} duration={500}>
+                  About
+                </Link>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+              </li>
+              <li
+                data-aos="fade-right"
+                className="relative group cursor-pointer"
+              >
+                <Link to="skill" smooth={true} duration={500}>
+                  Skills
+                </Link>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+              </li>
+              <li
+                data-aos="fade-right"
+                className="relative group cursor-pointer"
+              >
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact
+                </Link>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+              </li>
+              <li
+                data-aos="fade-right"
+                className="relative group cursor-pointer"
+              >
+                <Link to="project" smooth={true} duration={500}>
+                  Projects
+                </Link>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
+              </li>
+              <li data-aos="fade-right">
+                <Link
+                  to="./resume.pdf"
+                  target="_blank"
+                  download
+                  className="w-full lg:w-auto"
                 >
-                  <FaDownload></FaDownload>
-                  Resume
-                </button>
-              </Link>
-            </nav>
+                  <button
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init"
+                  >
+                    <FaDownload></FaDownload>
+                    Resume
+                  </button>
+                </Link>
+              </li>
+            </ul>
           </motion.div>
         )}
       </AnimatePresence>

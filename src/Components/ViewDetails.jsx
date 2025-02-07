@@ -5,13 +5,35 @@ const ViewDetails = () => {
   const params = useParams();
   const singleProject = project.find((item) => params.id == item.id);
   console.log(singleProject);
-  const { project_name, description, image, live_link, repo_link, challenges } =
+  const { id, project_name, description, image, live_link, repo_link } =
     singleProject;
   return (
     <>
       <section className="w-full bg-[#09031B] lg:py-10 lg:pt-0 pt-6 pb-0">
+        <div data-aos="fade-right" className="pt-6 pl-6">
+          <Link to={"/"}>
+            <button class="group inline-flex items-center space-x-1.5 md:space-x-2 p-4 bg-white/5 backdrop-blur-xl rounded-xl text-white/90 hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20 text-sm md:text-base">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-left w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"
+              >
+                <path d="m12 19-7-7 7-7"></path>
+                <path d="M19 12H5"></path>
+              </svg>
+              <span>Back</span>
+            </button>
+          </Link>
+        </div>
         <div className="w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-4 pt-6">
-          <div>
+          <div data-aos="fade-right">
             <div className="space-y-6 md:space-y-10 animate-slideInLeft">
               <div className="space-y-4 md:space-y-6">
                 <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
@@ -428,7 +450,7 @@ const ViewDetails = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group mb-4">
               <div class="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <img

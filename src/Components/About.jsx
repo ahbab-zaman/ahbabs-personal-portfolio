@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import img from ".././assets/pic-2.jpg";
 import Title from "./Title";
+import "./about.css";
 const About = () => {
   return (
     <>
-      <section className="w-full mx-auto bg-[#09031B]">
-        <div className="w-11/12 mx-auto ">
-          <Title title="About Me"></Title>
+      <section className="w-full mx-auto bg-[#09031B]" id="about">
+        <div className="w-11/12 mx-auto">
+        <div data-aos="fade-up">
+            <Title title="About Me"></Title>
+          </div>
 
           <div className="flex lg:flex-row flex-col justify-between items-center gap-12 lg:py-12 py-0">
             <div className="space-y-6 text-center lg:text-left lg:w-1/2 w-full">
@@ -65,7 +68,12 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img className="w-[70%] mx-auto rounded-full" src={img} alt="" />
+              <img
+                className="w-[70%] mx-auto rounded-full opacity-0 aos-init aos-animate"
+                src={img}
+                alt=""
+                data-aos="fade-left"
+              />
             </div>
           </div>
         </div>

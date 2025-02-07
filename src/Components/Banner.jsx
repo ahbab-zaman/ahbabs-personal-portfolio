@@ -2,24 +2,36 @@ import Lottie from "lottie-react";
 import animation from "../../public/Animation - 1738848074897.json";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
+import TypedReactDemo from "./typed.jsx";
+
 const Banner = () => {
   return (
     <>
       <div className="w-full bg-[#09031B] lg:py-10 lg:pt-0 pt-6 pb-0">
-        <section className="w-11/12 mx-auto flex lg:flex-row flex-col justify-center items-center">
+        <section
+          id="home"
+          className="w-11/12 mx-auto flex lg:flex-row flex-col justify-center items-center"
+        >
           <div className="lg:w-1/2 w-full space-y-4">
-            <button className="relative flex items-center gap-2 px-4 py-2 rounded-full border border-transparent bg-[#422771] text-[#7463F2] font-semibold text-sm shadow-lg shadow-purple-500/30 transition-all hover:shadow-purple-500/50 hover:scale-105 hover:transition-colors hover:duration-300">
+            <button
+              data-aos="fade-right"
+              className="relative flex items-center gap-2 px-4 py-2 rounded-full border border-transparent bg-[#422771] text-[#7463F2] font-semibold text-sm shadow-lg shadow-purple-500/30 transition-all hover:shadow-purple-500/50 hover:scale-105 hover:transition-colors hover:duration-300"
+            >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7463F2] to-[#7463F2]">
                 Ready to Code
               </span>
             </button>
-            <p className="text-[#7463F2] text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight">
+            <p
+              data-aos="fade-right"
+              data-aos-delay="300"
+              className="text-[#7463F2] text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight"
+            >
               I am
             </p>
             <div
-              className="space-y-2 aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-delay="600"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              className="space-y-2"
             >
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight">
                 <span className="relative inline-block">
@@ -30,25 +42,32 @@ const Banner = () => {
                 </span>
               </h1>
             </div>
-            <h3 className="text-xl lg:text-3xl font-light text-[#F2F3F5]">
-              Frontend Developer
-            </h3>
-
-            <Link
-              to="./resume.pdf"
-              target="_blank"
-              download
-              class="w-full lg:w-auto"
-            >
-              <button
-                data-aos="fade-up"
-                data-aos-duration="800"
-                class="w-1/2 lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init aos-animate"
+            <div className="h-[40px] text-xl lg:text-3xl font-light text-[#F2F3F5]">
+              <TypedReactDemo
+                strings={[
+                  "Frontend Developer",
+                  "MERN Stack Developer",
+                  "Full Stack Developer",
+                ]}
+              />
+            </div>
+            <div data-aos="fade-right" data-aos-delay="600">
+              <Link
+                to="./resume.pdf"
+                target="_blank"
+                download
+                class="w-full lg:w-auto"
               >
-                <FaDownload></FaDownload>
-                RESUME
-              </button>
-            </Link>
+                <button
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  class="w-1/2 lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init aos-animate"
+                >
+                  <FaDownload></FaDownload>
+                  RESUME
+                </button>
+              </Link>
+            </div>
             <div
               className="flex flex-row gap-3 w-full justify-start aos-init aos-animate"
               data-aos="fade-up"
@@ -114,7 +133,11 @@ const Banner = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            className="lg:w-1/2 w-full"
+          >
             <Lottie animationData={animation} loop={true} />
           </div>
         </section>

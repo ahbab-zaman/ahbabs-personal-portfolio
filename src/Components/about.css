@@ -1,0 +1,7 @@
+[data-aos="fade-in"] {
+  opacity: 0; /* Start fully hidden */
+  transition: opacity 1.5s ease-in-out;
+}
+[data-aos="fade-in"].aos-animate {
+  opacity: 1; /* End fully visible */
+}
