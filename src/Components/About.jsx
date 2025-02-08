@@ -7,7 +7,7 @@ const About = () => {
     <>
       <section className="w-full mx-auto bg-[#09031B]" id="about">
         <div className="w-11/12 mx-auto">
-        <div data-aos="fade-up">
+          <div data-aos="fade-up">
             <Title title="About Me"></Title>
           </div>
 
@@ -34,11 +34,12 @@ const About = () => {
                 data-aos="fade-right"
                 data-aos-duration="1500"
               >
-                I am a Junior Full-stack Developer with expertise in React,
-                Node.js, Express, and MongoDB. I specialize in building
-                responsive, user-friendly web applications and optimizing
-                performance. Passionate about learning and innovation, I strive
-                to create efficient and scalable solutions.
+                I am a Junior Full-stack Developer with expertise in React and
+                JavaScript also familiar with Node.js, Express, and MongoDB
+                which I specialize in building responsive, user-friendly web
+                applications and optimizing performance. Passionate about
+                learning and innovation, I strive to create efficient and
+                scalable solutions.
               </p>
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
                 <Link to="/" class="w-full lg:w-auto">
@@ -72,7 +73,7 @@ const About = () => {
                 className="w-[70%] mx-auto rounded-full"
                 src={img}
                 alt=""
-                 data-aos="zoom-in"
+                data-aos="zoom-in"
               />
             </div>
           </div>

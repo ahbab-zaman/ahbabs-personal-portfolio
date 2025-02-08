@@ -51,9 +51,8 @@ const Banner = () => {
                 ]}
               />
             </div>
-            <div data-aos="fade-right" data-aos-delay="600">
               <Link
-                to="./resume.pdf"
+                to="./ahbabs-portfolio.pdf"
                 target="_blank"
                 download
                 class="w-full lg:w-auto"
@@ -67,7 +66,6 @@ const Banner = () => {
                   RESUME
                 </button>
               </Link>
-            </div>
             <div
               className="flex flex-row gap-3 w-full justify-start aos-init aos-animate"
               data-aos="fade-up"

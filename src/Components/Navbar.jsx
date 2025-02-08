@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
-import { FaDownload } from "react-icons/fa";
+import img from ".././assets/pic-2.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,17 +60,6 @@ const Navbar = () => {
             </Link>
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <Link
-            to="./resume.pdf"
-            target="_blank"
-            download
-            className="w-full lg:w-auto"
-          >
-            <button className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init">
-              <FaDownload></FaDownload>
-              Resume
-            </button>
-          </Link>
         </ul>
 
         {/* Mobile menu icon */}
@@ -93,7 +82,7 @@ const Navbar = () => {
             className="fixed top-0 right-0 w-64 h-full  shadow-lg p-5 flex flex-col drawer bg-[#09031B]"
           >
             <div className="flex justify-between items-center mb-6">
-              <span className="text-lg font-semibold">Menu</span>
+              <img className="w-16 h-16 rounded-full" src={img} alt="" />
               <X
                 size={28}
                 className="cursor-pointer"
@@ -145,23 +134,6 @@ const Navbar = () => {
                   Projects
                 </Link>
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#6C64F2] transition-all duration-300 group-hover:w-full"></span>
-              </li>
-              <li data-aos="fade-right">
-                <Link
-                  to="./personal-portfolio.pdf"
-                  target="_blank"
-                  download
-                  className="w-full lg:w-auto"
-                >
-                  <button
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    className="w-full lg:w-auto py-2 px-4 text-sm rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init"
-                  >
-                    <FaDownload></FaDownload>
-                    Resume
-                  </button>
-                </Link>
               </li>
             </ul>
           </motion.div>
