@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full bg-[#09031B] shadow-md p-4 z-50 text-[#6C64F2]`}
     >
-      <div className="w-11/12 max-w-6xl mx-auto flex justify-between items-center">
+      <div className="w-11/12 mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold ">Ahbab</div>
 
@@ -148,7 +148,7 @@ const Navbar = () => {
               </li>
               <li data-aos="fade-right">
                 <Link
-                  to="./resume.pdf"
+                  to="./personal-portfolio.pdf"
                   target="_blank"
                   download
                   className="w-full lg:w-auto"

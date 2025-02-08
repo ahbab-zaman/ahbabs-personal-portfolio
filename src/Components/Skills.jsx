@@ -1,4 +1,3 @@
-import { GrTechnology } from "react-icons/gr";
 import Title from "./Title";
 import Marquee from "react-fast-marquee";
 
@@ -15,11 +14,7 @@ const Projects = () => {
           </div>
           <Marquee pauseOnHover={true}>
             <div className="flex items-center gap-5 overflow-y-hidden">
-              <div
-                data-aos="fade-up-right"
-                data-aos-duration="1000"
-                className="aos-init aos-animate ml-4"
-              >
+              <div className="ml-4">
                 <div class="group p-6 rounded-2xl bg-slate-800/50 hover:bg-slate-700/50 transition-all duration-300 ease-in-out flex flex-col items-center justify-center gap-3 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
                   <div class="relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-50 blur transition duration-300"></div>

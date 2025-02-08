@@ -12,7 +12,7 @@ const Banner = () => {
           id="home"
           className="w-11/12 mx-auto flex lg:flex-row flex-col justify-center items-center"
         >
-          <div className="lg:w-1/2 w-full space-y-4">
+          <div className="lg:w-1/2 w-11/12 space-y-4">
             <button
               data-aos="fade-right"
               className="relative flex items-center gap-2 px-4 py-2 rounded-full border border-transparent bg-[#422771] text-[#7463F2] font-semibold text-sm shadow-lg shadow-purple-500/30 transition-all hover:shadow-purple-500/50 hover:scale-105 hover:transition-colors hover:duration-300"
@@ -33,7 +33,7 @@ const Banner = () => {
               data-aos-delay="500"
               className="space-y-2"
             >
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight">
                 <span className="relative inline-block">
                   <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
                   <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent uppercase">
@@ -134,9 +134,9 @@ const Banner = () => {
             </div>
           </div>
           <div
-            data-aos="fade-left"
+             data-aos="zoom-in"
             data-aos-delay="300"
-            className="lg:w-1/2 w-full"
+            className="lg:w-1/2 w-11/12"
           >
             <Lottie animationData={animation} loop={true} />
           </div>

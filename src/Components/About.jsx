@@ -12,7 +12,7 @@ const About = () => {
           </div>
 
           <div className="flex lg:flex-row flex-col justify-between items-center gap-12 lg:py-12 py-0">
-            <div className="space-y-6 text-center lg:text-left lg:w-1/2 w-full">
+            <div className="space-y-6 text-center lg:text-left lg:w-1/2 w-11/12">
               <h2
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold aos-init aos-animate"
                 data-aos="fade-right"
@@ -67,12 +67,12 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-11/12">
               <img
-                className="w-[70%] mx-auto rounded-full opacity-0 aos-init aos-animate"
+                className="w-[70%] mx-auto rounded-full"
                 src={img}
                 alt=""
-                data-aos="fade-left"
+                 data-aos="zoom-in"
               />
             </div>
           </div>
