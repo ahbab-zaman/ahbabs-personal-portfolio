@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import emailIcon from "../../public/emailIcon.png";
+import addressIcon from "../../public/addressIcon.png";
 
 const Contact = () => {
   const form = useRef();
@@ -37,21 +38,31 @@ const Contact = () => {
         <Title title="Contact Me"></Title>
         <section>
           <div className="lg:w-3/4 w-11/12 mx-auto bg-[#16122c] rounded-xl py-16">
+            <div
+              data-aos="fade-right"
+              className="flex justify-center items-center gap-6"
+            >
+              <h2 className="lg:text-4xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-center capitalize mb-4">
+                Get in touch
+              </h2>
+              <IoShareSocialOutline className="text-[#a855f7] text-4xl"></IoShareSocialOutline>
+            </div>
+            <p
+              data-aos="fade-left"
+              class="text-gray-400 text-center text-lg mb-6"
+            >
+              Have something to discuss? Send me a message and let's talk.
+            </p>
             <div className="w-3/4 mx-auto bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-6 py-8 backdrop-blur-xl">
-              <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-center capitalize mb-6 flex items-center justify-center gap-2 lg:text-2xl">
-                <span class="inline-block w-8 h-1 bg-indigo-500 rounded-full"></span>
-                Connect With Me
-                <span class="inline-block w-8 h-1 bg-indigo-500 rounded-full"></span>
-              </h3>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <Link
-                    to="zamanahbab007@gmail.com"
+                <div className="flex items-center justify-between gap-4">
+                  <a
+                    href="mailto:zamanahbab007@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative flex items-center justify-between p-4 rounded-lg 
              bg-white/5 border border-white/10 overflow-hidden
-             hover:border-white/20 transition-all duration-500"
+             hover:border-white/20 transition-all duration-500 w-full"
                   >
                     <div
                       className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500
@@ -73,7 +84,7 @@ const Contact = () => {
                       </div>
                       <div class="flex flex-col">
                         <span class="text-lg font-bold pt-[0.2rem] text-gray-200 tracking-tight leading-none group-hover:text-white transition-colors duration-300">
-                          Let's Connect
+                          Connect On Gmail
                         </span>
                         <span class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                           zamanahbab007@gmail.com
@@ -104,14 +115,14 @@ const Contact = () => {
                   translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"
                       ></div>
                     </div>
-                  </Link>
+                  </a>
                   <Link
-                    to="zamanahbab007@gmail.com"
+                    to=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative flex items-center justify-between p-4 rounded-lg 
              bg-white/5 border border-white/10 overflow-hidden
-             hover:border-white/20 transition-all duration-500"
+             hover:border-white/20 transition-all duration-500 w-full"
                   >
                     <div
                       className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500
@@ -126,17 +137,17 @@ const Contact = () => {
                         <div className="relative p-2 rounded-md">
                           <img
                             className="lucide lucide-linkedin w-6 h-6 transition-all duration-500 group-hover:scale-105"
-                            src={emailIcon}
+                            src={addressIcon}
                             alt=""
                           />
                         </div>
                       </div>
                       <div class="flex flex-col">
                         <span class="text-lg font-bold pt-[0.2rem] text-gray-200 tracking-tight leading-none group-hover:text-white transition-colors duration-300">
-                          Let's Connect
+                          Address
                         </span>
                         <span class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                          zamanahbab007@gmail.com
+                          Subid Bazar, Sylhet
                         </span>
                       </div>
                     </div>
@@ -310,20 +321,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="py-12 space-y-4">
-              <div
-                data-aos="fade-right"
-                className="flex justify-center items-center gap-6"
-              >
-                <h2 className="lg:text-4xl text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-center capitalize">
-                  Get in touch
-                </h2>
-                <IoShareSocialOutline className="text-[#a855f7] text-4xl"></IoShareSocialOutline>
-              </div>
-              <p data-aos="fade-left" class="text-gray-400 text-center text-lg">
-                Have something to discuss? Send me a message and let's talk.
-              </p>
-
+            <div className="pt-4 pb-12 space-y-4">
               <form ref={form} onSubmit={sendEmail} className="space-y-4">
                 <div
                   data-aos="fade-up"
