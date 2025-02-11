@@ -51,21 +51,21 @@ const Banner = () => {
                 ]}
               />
             </div>
-              <Link
-                to="./ahbabs-portfolio.pdf"
-                target="_blank"
-                download
-                class="w-full lg:w-auto"
+            <Link
+              to="./ahbabs-portfolio.pdf"
+              target="_blank"
+              download
+              class="w-full lg:w-auto"
+            >
+              <button
+                data-aos="fade-up"
+                data-aos-duration="800"
+                class="w-1/2 lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init aos-animate"
               >
-                <button
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  class="w-1/2 lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow aos-init aos-animate"
-                >
-                  <FaDownload></FaDownload>
-                  RESUME
-                </button>
-              </Link>
+                <FaDownload></FaDownload>
+                RESUME
+              </button>
+            </Link>
             <div
               className="flex flex-row gap-3 w-full justify-start aos-init aos-animate"
               data-aos="fade-up"
@@ -103,7 +103,7 @@ const Banner = () => {
                 </button>
               </Link>
               <Link
-                to="https://www.linkedin.com/in/ahbab-zaman-6398b6345"
+                to="https://www.linkedin.com/in/zaman-ahbab"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -132,7 +132,7 @@ const Banner = () => {
             </div>
           </div>
           <div
-             data-aos="zoom-in"
+            data-aos="zoom-in"
             data-aos-delay="300"
             className="lg:w-1/2 w-11/12"
           >
