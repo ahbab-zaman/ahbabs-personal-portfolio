@@ -55,7 +55,7 @@ const Contact = () => {
             </p>
             <div className="w-3/4 mx-auto bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-6 py-8 backdrop-blur-xl">
               <div className="space-y-4">
-                <div className="flex items-center justify-between gap-4">
+                <div className="flex lg:flex-row flex-col items-center justify-between gap-4">
                   <a
                     href="mailto:zamanahbab007@gmail.com"
                     target="_blank"
@@ -68,13 +68,13 @@ const Contact = () => {
                       className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500
                bg-gradient-to-r from-[#0A66C2] to-[#0077B5]"
                     ></div>
-                    <div className="relative flex items-center gap-4">
+                    <div className="relative flex items-center justify-center gap-4">
                       <div className="relative flex items-center justify-center">
                         <div
                           className="absolute inset-0 opacity-20 rounded-md transition-all duration-500
                    group-hover:scale-110 group-hover:opacity-30"
                         ></div>
-                        <div className="relative p-2 rounded-md">
+                        <div className="relative lg:p-2 p-0 rounded-md w-full">
                           <img
                             className="lucide lucide-linkedin w-6 h-6 transition-all duration-500 group-hover:scale-105"
                             src={emailIcon}
